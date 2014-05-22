@@ -63,7 +63,7 @@ namespace GoogleAnalyticsExcelReportmaker
 
         //max-results (Optional)
         //Maximum number of results to retrieve from the API. The default is 1,000 but can be set up to 10,000.
-        //example 500
+        //example 500 and more
         public string maxResults { get; set; }
 
     }

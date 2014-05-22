@@ -41,7 +41,10 @@ namespace GoogleAnalyticsExcelReportmaker
                 //4.end-date//
 
                 //5.Tabnames//
-
+                if (!(gqs.ExcelTabNames != null && gqs.ExcelTabNames.Length < 2))
+                {
+                    isError = true;
+                }
                 //6.Sequence(Hard to impliemnt)//
 
             }
