@@ -26,6 +26,16 @@ namespace GoogleAnalyticsExcelReportmaker
                 }
                 //2.metrices//
                 string[] metricesAllowed = getvalidation("metrics");
+                string[] metrices = gqs.metrics.Split(',');
+
+                foreach (string sr in metrices)
+                {
+                    if (!metricesAllowed.Contains(sr))
+                    {
+                        isError = true;
+                    }
+                }
+
                 //3.start-date//
 
                 //4.end-date//
